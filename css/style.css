@@ -355,7 +355,7 @@ ul {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .social-list .link:hover .circle,
@@ -380,7 +380,6 @@ ul {
 
 .clients-list .item {
   display: flex;
-  
 }
 
 .clients-list .link {
@@ -401,12 +400,12 @@ ul {
 }
 
 .link:hover .rectangle,
-.link:focus .rectangle{
+.link:focus .rectangle {
   fill: var(--blue-color);
 }
 
 .link:hover .rectangle,
-.link:focus .rectangle{
+.link:focus .rectangle {
   border-color: var(--blue-color);
 }
 

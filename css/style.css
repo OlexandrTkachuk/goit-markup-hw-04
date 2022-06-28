@@ -29,8 +29,6 @@ p {
 
 img {
   display: block;
-  /* max-width: 100%;
-    height: auto; */
 }
 
 ul {
@@ -342,30 +340,28 @@ ul {
 
 .social-list .item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  border-radius: 50%;
 }
 
 .social-list .item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list .item:hover {
+.social-list .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  fill: #AFB1B8;
+}
+
+.social-list .link:hover .circle,
+.link:focus .circle {
+  fill: #ffffff;
   background-color: var(--blue-color);
-}
-
-.social-list .link-icon {
-  background-size: cover;
-  fill: #afb1b8;
-}
-
-.social-list .link-icon:hover {
-  fill: #fff;
 }
 
 .clients .title {
@@ -378,10 +374,21 @@ ul {
 
 .clients-list {
   display: flex;
+
   margin-top: 50px;
 }
 
 .clients-list .item {
+  display: flex;
+  
+}
+
+.clients-list .link {
+  fill: currentColor;
+  color: inherit;
+}
+
+.rectangle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +400,13 @@ ul {
   border-radius: 4px;
 }
 
-.clients-list .item:hover {
+.link:hover .rectangle,
+.link:focus .rectangle{
+  fill: var(--blue-color);
+}
+
+.link:hover .rectangle,
+.link:focus .rectangle{
   border-color: var(--blue-color);
 }
 
@@ -401,21 +414,19 @@ ul {
   margin-right: 30px;
 }
 
-.clients-list .link {
-  fill: currentColor;
-  color: inherit;
-}
-
-.clients-list .link:hover {
-  fill: var(--blue-color);
-}
-
 /* Подвал */
 .footer {
   background-color: #2f303a;
+}
 
+.footer .container {
+  display: flex;
+}
+
+.address {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 70px;
 }
 
 .link-contacts-footer {
@@ -448,6 +459,43 @@ ul {
 
   font-style: normal;
   line-height: 1.71;
+}
+
+.attraction {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.attraction .title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.attraction-list {
+  display: flex;
+}
+
+.attraction-list .item:not(last-child) {
+  margin-right: 10px;
+}
+
+.attraction .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #757575;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
+}
+
+.attraction-list .link:hover .circle,
+.attraction-list .link:focus .circle {
+  background-color: var(--blue-color);
 }
 
 /* Кнопки-портфолио */

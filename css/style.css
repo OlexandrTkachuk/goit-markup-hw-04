@@ -59,7 +59,6 @@ ul {
 .header {
   height: 80px;
   border-bottom: 1px solid #ececec;
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -234,7 +233,11 @@ ul {
   justify-content: space-between;
 }
 
-.benefits .button {
+.benefits .icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
   margin: 0;
   padding: 0;
   width: 270px;
@@ -346,7 +349,7 @@ ul {
   margin-right: 10px;
 }
 
-.social-list .circle {
+.social-list .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,8 +361,8 @@ ul {
   fill: #afb1b8;
 }
 
-.social-list .link:hover .circle,
-.link:focus .circle {
+.social-list .link:hover,
+.social-list .link:focus {
   fill: #ffffff;
   background-color: var(--blue-color);
 }
@@ -374,7 +377,6 @@ ul {
 
 .clients-list {
   display: flex;
-
   margin-top: 50px;
 }
 
@@ -383,11 +385,10 @@ ul {
 }
 
 .clients-list .link {
-  fill: currentColor;
-  color: inherit;
+  fill: #afb1b8;
 }
 
-.rectangle {
+.clients-list .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,13 +400,13 @@ ul {
   border-radius: 4px;
 }
 
-.link:hover .rectangle,
-.link:focus .rectangle {
+.clients-list .link:hover,
+.clients-list .link:focus {
   fill: var(--blue-color);
 }
 
-.link:hover .rectangle,
-.link:focus .rectangle {
+.clients-list .link:hover,
+.clients-list .link:focus {
   border-color: var(--blue-color);
 }
 
@@ -481,19 +482,19 @@ ul {
   margin-right: 10px;
 }
 
-.attraction .circle {
+.attraction .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #757575;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   fill: #ffffff;
 }
 
-.attraction-list .link:hover .circle,
-.attraction-list .link:focus .circle {
+.attraction-list .link:hover,
+.attraction-list .link:focus {
   background-color: var(--blue-color);
 }
 
